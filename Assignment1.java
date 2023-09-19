@@ -33,8 +33,13 @@ public class Assignment1 {
      String trimmedString = inputString.substring(1, 4);
      StringBuilder reversedString = new StringBuilder(trimmedString).reverse();
 
+   //Random Number Between 32 and 16,384
 
-     System.out.print("Results: " + celsius + reversedString);
+   Random random = new Random();
+   int randomNumber = random.nextInt(16353) + 32;
+
+   System.out.print("Results: " + celsius + reversedString + randomNumber);
    }
+
   }
-}
+}}
