@@ -6,7 +6,8 @@ import java.util.Random;
 public class Assignment1 {
   public static void main(String[] args) {
     // Add your code here
-   Scanner scan = new Scanner(System.in);
+    try (
+   Scanner scan = new Scanner(System.in)){;
 
    //Print Initials
 
@@ -25,7 +26,7 @@ public class Assignment1 {
    double fahrenheit = scan.nextDouble();
    double celsius = (fahrenheit - 32) * 5.0 / 9.0;
 
-   // 5 Character String, Trim Ends and Reverse
+   //5 Character String, Trim Ends and Reverse
 
    System.out.print("Enter a 5 character string: ");
    String inputString = scan.next();
@@ -40,6 +41,9 @@ public class Assignment1 {
 
    System.out.print("Results: " + celsius + reversedString + randomNumber);
    }
-
+   //Invalid Response
+   else {
+    System.out.print("Invalid Input, Enter Valid Response");
+   }
   }
 }}
