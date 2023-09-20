@@ -2,6 +2,7 @@
 // MacKenzie Coleman
 import java.util.Scanner;
 import java.util.Random;
+import java.lang.Math;
 
 public class Assignment1 {
   public static void main(String[] args) {
@@ -39,7 +40,7 @@ public class Assignment1 {
     Random random = new Random();
     int randomNumber = random.nextInt(16353) + 32;
 
-    System.out.println("Results:" + celsius + reversedString + randomNumber);
+    System.out.println("Results:" + Math.round(celsius) + reversedString + randomNumber);
     }
     //Invalid Response
     else {
